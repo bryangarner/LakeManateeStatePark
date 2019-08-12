@@ -1,0 +1,102 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Palanquin', sans-serif;
+}
+html, body, #mapid {
+	height: 100%;
+	width: 100vw;
+}
+textarea {
+	resize: none;
+	font-family: 'Palanquin', sans-serif;
+}
+#mapid>div.leaflet-control-container>div.leaflet-top.leaflet-left>div.leaflet-draw.leaflet-control>div>div {
+	border: 0;
+}
+.submit-Control {
+	background-color: rgba(255, 255, 255, 0.9);
+	color: black;
+	padding: 10px;
+	padding-right: 16px;
+	width: 197px;
+	font-size: 14px;
+	border: 2px solid rgba(1, 1, 1, 0.2);
+	border-radius: 5px;
+	background-clip: padding-box;
+	position: absolute;
+	top: -230px;
+	left: 40px;
+}
+@media only screen and (max-width: 540px) {
+	.submit-Control {
+		transform: scale(0.6);
+		-moz-transform: scale(0.6);
+		position: absolute;
+		top: -330px;
+		left: -7px;
+	}
+    #mapid>div.leaflet-control-container>div.leaflet-top.leaflet-left>div:nth-child(6)>div {
+		transform: scale(0.7);
+		-moz-transform: scale(0.6);
+		top: -22px;
+		left: 4px;
+	}
+}
+@media screen and (min-width: 540px) and (max-width: 860px) {
+	.submit-Control {
+		transform: scale(0.6);
+		-moz-transform: scale(0.6);
+		position: absolute;
+		top: -370px;
+		left: -7px;
+	}
+	#mapid>div.leaflet-control-container>div.leaflet-top.leaflet-left>div:nth-child(6)>div {
+		transform: scale(0.7);
+		-moz-transform: scale(0.6);
+		top: -22px;
+		left: 4px;
+	}
+}
+#mapid>div.leaflet-control-container>div.leaflet-top.leaflet-left>div:nth-child(6)>span {
+	background-color: #2B85E7;
+}
+.open-active {
+	color: #2B85E7;
+}
+.btn {
+	background: #2B85E7;
+	border: #dbdbdb;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 3px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+	display: inline-block;
+	line-height: 16px;
+	margin: 6px 8px 6px 0;
+	min-width: 88px;
+	padding: 5px 12px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.1s all ease;
+	cursor: pointer;
+}
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+}
+.btn:active {
+	position: relative;
+	top: 1px;
+}
+.btn:disabled {
+	position: relative;
+	top: 1px;
+	color: lightgray;
+	background-color: #505250;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+}
+.btn:disabled:hover {
+	transform: translateY(0px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+}
